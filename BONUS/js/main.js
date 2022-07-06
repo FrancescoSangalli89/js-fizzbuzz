@@ -47,7 +47,6 @@ cancelDom.addEventListener('click',
     function() {
         inputWrapperDom.classList.remove('hidden');
         containerDom.classList.remove('show');
-        containerDom.classList.add('hidden');
-        i=-1; continue;  
+        containerDom.classList.add('hidden');  
     }
 )
