@@ -5,12 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FizzBuzz</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         
         <h1>FizzBuzzDOM</h1>
-        <div id="container">
+
+        <div class="inputWrapper">
+            <label for="squareNumber">Quanti quadrati vuoi stampare?</label>
+            <input type="number" id="squareNumber" placeholder="inserisci il numero dei quadrati">
+            <button id="btn">Crea</button>
+        </div>
+
+        <div id="container" class="hidden">
+            <i id="cancel" class="fa-solid fa-x"></i>
 
         </div>
 

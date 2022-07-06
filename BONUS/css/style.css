@@ -15,12 +15,63 @@ h1 {
     text-align: center;
 }
 
+.inputWrapper {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.show {
+    display: block;
+}
+
+label {
+    color: #fff;
+}
+
+#squareNumber {
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+#btn {
+    margin: 2rem auto;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #1389B2;
+    cursor: pointer;
+}
+
+#btn:focus {
+    background-color: #FFD166;
+}
+
 #container {
     max-width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+}
+
+#cancel {
+    position: absolute;
+    top: 0;
+    left: 100%;
 }
 
 .box {
