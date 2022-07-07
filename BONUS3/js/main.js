@@ -5,6 +5,8 @@ const containerDom = document.getElementById('container');
 
 const inputWrapperDom = document.querySelector('.inputWrapper');
 
+const boxesDom = document.getElementById('boxes')
+
 btnDom.addEventListener('click',
 
     function() {
@@ -18,19 +20,19 @@ btnDom.addEventListener('click',
             if (i % 5 == 0 && i % 3 == 0) {
                 box.append('fizzbuzz');
                 box.classList = "box fizzBuzz";
-                containerDom.append(box);
+                boxesDom.append(box);
             } else if (i % 3 == 0) {
                 box.append('fizz');
                 box.classList = "box fizz";
-                containerDom.append(box);
+                boxesDom.append(box);
             } else if (i % 5 == 0) {
                 box.append('buzz');
                 box.classList = "box buzz";
-                containerDom.append(box);
+                boxesDom.append(box);
             } else {
                 box.append(i);
                 box.classList = "box";
-                containerDom.append(box);
+                boxesDom.append(box);
             }
         }
 
@@ -48,5 +50,6 @@ cancelDom.addEventListener('click',
         inputWrapperDom.classList.remove('hidden');
         containerDom.classList.remove('show');
         containerDom.classList.add('hidden');  
+        boxesDom.innerHTML = '';
     }
 )

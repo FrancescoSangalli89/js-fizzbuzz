@@ -62,10 +62,13 @@ label {
 #container {
     max-width: 90%;
     margin: 0 auto;
+    position: relative;
+}
+
+#boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
 }
 
 #cancel {
